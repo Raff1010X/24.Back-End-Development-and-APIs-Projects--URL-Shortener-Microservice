@@ -1,5 +1,5 @@
 const fs = require('fs');
-const validUrl = require('valid-url');
+const validator = require('validator');
 
 const writeFile = async (url, req, res) => {
     const count = fs.readdirSync(`${__dirname}/../data`).length + 1;
@@ -25,7 +25,7 @@ exports.getUrl = (req, res) => {
 
 exports.postUrl = (req, res) => {
     const url = req.body.url;
-    if (validUrl.isUri(url)) {
+    if (validator.isURL(url)) {
         writeFile(url, req, res);
     } else {
         res.json({ error: 'invalid url' });
