@@ -2,7 +2,7 @@
 
 ## [URL Shortener Microservice](https://www.freecodecamp.org/learn/back-end-development-and-apis/back-end-development-and-apis-projects/url-shortener-microservice)
 
-Working example: https://url--shortener--project.herokuapp.com/
+Working example: https://url--shortener--project.webdev.priv.pl/
 
 My git repo: https://github.com/Raff1010X/01.Roadmap
 
